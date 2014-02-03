@@ -13,3 +13,6 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := $(LOCAL_DIR)/full_umts_spyder.mk
+ifeq ($(TARGET_PRODUCT),slim_umts_spyder)
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/slim.mk
+endif
